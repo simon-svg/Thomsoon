@@ -45,11 +45,26 @@ body.onload = () => {
 
 const appSlide = document.querySelector(".app__slide");
 let opacioty = 1;
-window.addEventListener("scroll", () => {
-    appSlide.style.opacity = ((appSlide.getBoundingClientRect().height - window.scrollY) / 600)
+if (window.innerWidth > 1150) {
+    appSlide.style.opacity = "0.9"
+    window.addEventListener("scroll", function windowScroll() {
+        appSlide.style.opacity = ((appSlide.getBoundingClientRect().height - window.scrollY) / 600)
+    })
+}
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 1150) {
+        appSlide.style.opacity = "0.9"
+        window.addEventListener("scroll", function windowScroll() {
+            appSlide.style.opacity = ((appSlide.getBoundingClientRect().height - window.scrollY) / 600)
+        })
+    }
+    else if (window.innerWidth < 1151) {
+        appSlide.style.opacity = "0.4"
+        window.addEventListener("scroll", function windowScroll() {
+            appSlide.style.opacity = "0.4"
+        })
+    }
 })
-
-
 
 
 
