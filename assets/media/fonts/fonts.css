@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Black.eot');
+    src: url('Raleway-Black.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Black.woff2') format('woff2'),
+        url('Raleway-Black.woff') format('woff'),
+        url('Raleway-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Light.eot');
+    src: url('Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Light.woff2') format('woff2'),
+        url('Raleway-Light.woff') format('woff'),
+        url('Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Black_1.eot');
+    src: url('Raleway-Black_1.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Black_1.woff2') format('woff2'),
+        url('Raleway-Black_1.woff') format('woff'),
+        url('Raleway-Black_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Light_1.eot');
+    src: url('Raleway-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Light_1.woff2') format('woff2'),
+        url('Raleway-Light_1.woff') format('woff'),
+        url('Raleway-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Black_2.eot');
+    src: url('Raleway-Black_2.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Black_2.woff2') format('woff2'),
+        url('Raleway-Black_2.woff') format('woff'),
+        url('Raleway-Black_2.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Light_2.eot');
+    src: url('Raleway-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Light_2.woff2') format('woff2'),
+        url('Raleway-Light_2.woff') format('woff'),
+        url('Raleway-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

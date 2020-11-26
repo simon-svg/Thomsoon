@@ -1,0 +1,236 @@
+html{
+    font-family: "Raleway", sans-serif;
+}
+body{
+    overflow-y: hidden;
+}
+.app{
+    width: 100%;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.logo__link{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0 40px 25px 0;
+    border-bottom: 1px solid #f1f1f1;
+    transition: opacity ease .3s;
+    -webkit-transition: opacity ease .3s;
+    -moz-transition: opacity ease .3s;
+    -ms-transition: opacity ease .3s;
+    -o-transition: opacity ease .3s;
+}
+.logo__link:hover{
+    opacity: 0.3;
+}
+
+/* 
+home 
+*/
+
+.home{
+    padding-top: 70px;
+}
+.home__title_inside{
+    font-size: 43px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 0;
+    position: relative;
+}
+.home__title_inside_cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home__title_inside_cursor{
+    width: 7px;
+    height: 35px;
+    background-color: #000000;
+    margin-left: 5px;
+    animation: cursorAnim ease-in-out .7s infinite;
+    -webkit-animation: cursorAnim ease .7s infinite;
+}
+@keyframes cursorAnim{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* 
+portfolio 
+*/
+
+.portfolio__title_inside{
+    font-size: 13px;
+    color: #8d8d8d;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+    width: 40%;
+}
+.portfolio__cont{
+    width: 790px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.portfolio__cont_first-items,
+.portfolio__cont_last-items{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__cont_item{
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+    margin-top: 20px;
+    transition: opacity ease .3s;
+    -webkit-transition: opacity ease .3s;
+    -moz-transition: opacity ease .3s;
+    -ms-transition: opacity ease .3s;
+    -o-transition: opacity ease .3s;
+    cursor: pointer;
+}
+.portfolio__cont_item1{
+    margin-top: 0;
+}
+.portfolio__cont_item2{
+    background-color: rgb(224, 224, 224);
+}
+.portfolio__cont_item3{
+    background-color: rgb(211, 211, 211);
+}
+.portfolio__cont_item-second{
+    height: 400px;
+    background-color: rgb(211, 211, 211);
+    margin-top: 0;
+}
+.portfolio__cont_item4{
+    background-color: rgb(184, 184, 184);
+}
+.portfolio__cont_item5{
+    background-color: rgb(163, 163, 163);
+}
+.portfolio__cont_item:hover{
+    opacity: 0.1;
+}
+
+/* 
+app slide 
+*/
+
+.app__slide{
+    position: absolute;
+    width: 34%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: gray;
+    overflow: hidden;
+}
+.dots{
+    width: 200%;
+    display: block;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: 0;
+}
+.black-dots{
+    z-index: 1;
+}
+
+/* 
+footer 
+*/
+
+.footer{
+    background: #f1f1f1;
+    width: 100%;
+    margin-top: 150px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__icons{
+    display: flex;
+    justify-content: center;
+}
+.footer__inside{
+    margin-top: 60px;
+}
+.footer__inside_text{
+    color: #686868;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: center;
+}
+.footer__icon{
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__icon:last-child{
+    margin-left: 5px;
+}
+.icon{
+    transition: opacity ease .2s;
+    -webkit-transition: opacity ease .2s;
+    -moz-transition: opacity ease .2s;
+    -ms-transition: opacity ease .2s;
+    -o-transition: opacity ease .2s;
+}
+.footer__icon:hover .icon{
+    opacity: 0.3;
+}
+
+
+/* 
+loader 
+*/
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999999;
+}
