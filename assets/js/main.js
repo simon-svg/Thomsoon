@@ -3,11 +3,15 @@ let titleAnimInner = "";
 const arrProjects = ["p", "r", "o", "j", "e", "c", "t", "s"];
 const arrShow = ["s", "h", "o", "w", " ", "c", "a", "s", "e"];
 let index = 0;
+const body = document.querySelector("body");
+const loader = document.querySelector(".loader");
+const loaderGif = document.querySelector(".loader__gif");
 
-
-document.body.onload = () => {
-    document.querySelector("body").style["overflow-y"] = "scroll";
-    document.querySelector(".loader").style.display = "none";
+body.onload = () => {
+    body.style["overflow-y"] = "scroll";
+    loader.style.visibility = "hidden";
+    loader.style.opacity = "0";
+    loaderGif.remove()
 
     setTimeout(() => {
         const projInterval = setInterval(() => {
@@ -34,7 +38,7 @@ document.body.onload = () => {
                 }
             }, 50);
         }, 2000);
-    }, 1000)
+    }, 1500)
 }
 
 
@@ -61,5 +65,41 @@ document.addEventListener("mousemove", (e) => {
         const y = (window.innerHeight - e.pageY * speed) / 120;
 
         layer.style.transform = `translate(${x}px, ${y}px)`
-    }) 
+    })
+})
+
+
+
+
+
+
+// burger-menu
+
+const burgerMenu = document.querySelector(".burger-menu");
+const headerNnav = document.querySelector(".header__nav_cont");
+const burgerIcon = document.querySelector(".burger-icon");
+let burgerBool = true;
+
+burgerMenu.addEventListener("click", (e) => {
+    e.stopPropagation()
+    if (burgerBool) {
+        headerNnav.style.opacity = "1";
+        headerNnav.style.visibility = "visible";
+        burgerIcon.setAttribute("class", "burger-icon fa fa-close")
+        body.style["overflow-y"] = "hidden";
+    }
+    else {
+        headerNnav.style.opacity = "0";
+        headerNnav.style.visibility = "hidden";
+        burgerIcon.setAttribute("class", "burger-icon fa fa-bars")
+        body.style["overflow-y"] = "scroll";
+    }
+    burgerBool = !burgerBool;
+})
+document.addEventListener("click", () => {
+    headerNnav.style.opacity = "0";
+    headerNnav.style.visibility = "hidden";
+    burgerIcon.setAttribute("class", "burger-icon fa fa-bars")
+    body.style["overflow-y"] = "scroll";
+    burgerBool = true;
 })
